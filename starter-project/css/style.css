@@ -3,4 +3,24 @@
 
 body {
     font-family: Arial, sans-serif;
+    align-content: flex-end;
+    margin-left: 66px;
+    align-self: center;
+    background-color: orange;
+    text-align: center
+    
 }
+
+header{
+    font-style: italic;
+    align-items: center;
+}
+nav a{
+    color: blue;
+    word-spacing: 200px;
+    text-decoration: none;
+    
+}
+
+
+

@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d1b2a;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.topbar,
+.hero,
+.features,
+.buttons,
+.nav {
+  display: flex;
+}
+
+.topbar,
+.hero,
+.features {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar {
+  padding: 20px 0;
+}
+
+.nav {
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 40px 0;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1 span {
+  color: #5ed8ff;
+}
+
+.tag {
+  display: inline-block;
+  background: #123;
+  color: #5ed8ff;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.btn-blue {
+  background: blue;
+}
+
+.btn-light {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.computer-box {
+  position: relative;
+  width: 480px;
+}
+
+.screen {
+  width: 100%;
+  height: 260px;
+  background: #23395d;
+  border: 8px solid white;
+  border-radius: 15px;
+}
+
+.base {
+  width: 75%;
+  height: 25px;
+  background: white;
+  margin: 0 auto;
+  border-radius: 0 0 15px 15px;
+}
+
+.stand {
+  width: 10px;
+  height: 80px;
+  background: white;
+  margin: 0 auto;
+}
+
+.price {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #111;
+  color: #5ed8ff;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.spec {
+  background: #122233;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.feature-box {
+  background: #122233;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.feature-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-text li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .hero,
+  .features,
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .specs {
+    grid-template-columns: 1fr;
+  }
+}
